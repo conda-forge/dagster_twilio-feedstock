@@ -1,13 +1,13 @@
 {% set name = "dagster_twilio" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.7.post0" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 1bcfe8d3c0051101bdeabc6104b2e715421f34082f2d1b4f9ce7fb5b4c5bf922
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name|replace('_', '-') }}/{{ name|replace('_', '-') }}-{{ version }}.tar.gz"
+  sha256: 06275ea618fb5ecfa3633c0c017992cccbaf59a4695b23357f9bf1df16e5e531
 
 build:
   number: 0
